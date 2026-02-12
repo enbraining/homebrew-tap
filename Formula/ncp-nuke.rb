@@ -5,21 +5,21 @@
 class NcpNuke < Formula
   desc "NCP Sub Account Mass Management & Resource Nuke CLI"
   homepage "https://github.com/enbraining/ncp-nuke"
-  version "1.1.2"
+  version "1.1.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/enbraining/ncp-nuke/releases/download/v1.1.2/ncp-nuke_1.1.2_darwin_amd64.tar.gz"
-      sha256 "bde37a9f974b8634a398dbd6375c687b08de7cc388df0c220217ad139f5d9fd7"
+      url "https://github.com/enbraining/ncp-nuke/releases/download/v1.1.3/ncp-nuke_1.1.3_darwin_amd64.tar.gz"
+      sha256 "821e218db16271bc65b701773dff8f5a817912f08a499be92c1a4dfd9bbf98ea"
 
       def install
         bin.install "ncp-nuke"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/enbraining/ncp-nuke/releases/download/v1.1.2/ncp-nuke_1.1.2_darwin_arm64.tar.gz"
-      sha256 "5a60e1af88f125d0c1ca1d2e4045fd22683c49dcb52db295b98af5430294306a"
+      url "https://github.com/enbraining/ncp-nuke/releases/download/v1.1.3/ncp-nuke_1.1.3_darwin_arm64.tar.gz"
+      sha256 "b5eb2c94bdfea29254fde0f5fba500c7fb2f1b0ed436cd6e4c79f1fb58628b6e"
 
       def install
         bin.install "ncp-nuke"
@@ -29,15 +29,15 @@ class NcpNuke < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/enbraining/ncp-nuke/releases/download/v1.1.2/ncp-nuke_1.1.2_linux_amd64.tar.gz"
-      sha256 "cc8ccc59e69d37a56dd14067b2444e9ceddd31e39bb95bbef06115c708c8b3eb"
+      url "https://github.com/enbraining/ncp-nuke/releases/download/v1.1.3/ncp-nuke_1.1.3_linux_amd64.tar.gz"
+      sha256 "79016d7f345a122f78c801ee52863f6b43190dc71dac3cfdb7392c1ed60312a1"
       def install
         bin.install "ncp-nuke"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/enbraining/ncp-nuke/releases/download/v1.1.2/ncp-nuke_1.1.2_linux_arm64.tar.gz"
-      sha256 "093d659968c2bc967f055f88dda9373bcb0497f2713d9f52b185a3d3e432c318"
+      url "https://github.com/enbraining/ncp-nuke/releases/download/v1.1.3/ncp-nuke_1.1.3_linux_arm64.tar.gz"
+      sha256 "134644d856e28c23b6d66595559a6cbf8e839bb2a8425ca1b86cd259a6500aa8"
       def install
         bin.install "ncp-nuke"
       end
